@@ -1,3 +1,147 @@
 body {
     font-family: "Raleway", sans-serif;
+    margin: 0;
   }
+
+header {
+  text-align: center;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  box-shadow: 0 3px 4px #aeacaf;
+}
+
+.logo {
+  width: 55%;
+}
+
+.inputfield {
+  border: 0;
+  background-color: transparent
+}
+
+.search {
+  padding-bottom: 65px;
+  text-align: center;
+  background-color: rgba(80%, 80%, 80%, 0.2);
+}
+
+#searchcity {
+  background-color: rgba(80%, 80%, 80%, 0.3);
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.searchresto p {
+  font-weight: lighter;
+  font-size: 16px;
+  margin-bottom: 45px;
+}
+
+.searchresto_btn {
+  width: 60%;
+  background: linear-gradient(#ff79da, #9356dc);
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 15px 30px;
+  box-shadow: 0 5px 15px 0 #aeacaf;
+  border-radius: 25px;
+}
+
+.function {
+  margin: 15px;
+}
+
+.function__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.function__btn {
+  text-decoration: none;
+  color: inherit
+}
+
+.resto {
+  padding: 15px;
+  background-color: rgba(80%, 80%, 80%, 0.2);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.resto-imgcard {
+  position: relative;
+}
+
+figure {
+  margin: 0
+}
+
+.corner {
+  padding: 7px 13px;
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  background-color: #99E2D0;
+  color: rgb(27.3%, 51.9%, 35.6%);
+  font-size: 14px;
+  font-weight: bolder;
+  border-radius: 2px;
+}
+
+.resto__card {
+  width: 95%;
+  height: 250px;
+  margin: auto;
+  border-radius: 18px;
+  background-color: white;
+  box-shadow:0 0 10px #aeacaf;
+  margin-bottom: 20px;
+}
+
+.resto__img {
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  height: 180px;
+  border-radius: 18px 18px 0 0;
+}
+
+.resto__descrip {
+  display: flex;
+  justify-content: space-between;
+}
+
+hgroup {
+  padding-left: 15px;
+}
+
+.resto h2 {
+  font-size: 18px;
+  margin-top: 8px;
+}
+
+.resto h3 {
+  font-size: 17px;
+  font-weight: lighter;
+  margin-top: -12px;
+}
+
+.like {
+  font-size: 25px;
+  color: rgb(44.1%, 44.1%, 44.1%);
+  padding-right: 25px;
+  margin-top: 15px;
+}
+
+
+footer {
+  background-color: rgb(21.8%, 21.8%, 21.8%);
+}
+
+footer li {
+  text-decoration: none;
+  list-style: none;
+}
