@@ -1,5 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  list-style: none;
+}
+
 body {
-    font-family: "Raleway", sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
   }
 
@@ -32,10 +43,16 @@ header {
   padding-bottom: 15px;
 }
 
+.searchresto {
+  padding-top: 30px;
+}
+
 .searchresto p {
-  font-weight: lighter;
+  font-weight: 300;
   font-size: 16px;
   margin-bottom: 45px;
+  margin-top: 20px;
+  color: rgb(21.8%, 21.8%, 21.8%);
 }
 
 .searchresto_btn {
@@ -50,7 +67,9 @@ header {
 }
 
 .function {
-  margin: 15px;
+  margin: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .function__list {
@@ -64,7 +83,7 @@ header {
 }
 
 .resto {
-  padding: 15px;
+  padding: 50px 20px 50px 20px;
   background-color: rgba(80%, 80%, 80%, 0.2);
   display: flex;
   flex-wrap: wrap;
@@ -125,8 +144,7 @@ hgroup {
 
 .resto h3 {
   font-size: 17px;
-  font-weight: lighter;
-  margin-top: -12px;
+  font-weight: 300
 }
 
 .like {
@@ -139,9 +157,26 @@ hgroup {
 
 footer {
   background-color: rgb(21.8%, 21.8%, 21.8%);
+  padding: 30px;
 }
 
 footer li {
   text-decoration: none;
-  list-style: none;
+  list-style-type: none;
+  color: inherit;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 10px;
+  margin-left: 0;
+}
+
+footer h1 {
+  font-family: 'Shrikhand', cursive;
+  color: white;
+  font-size: 25px;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+footer a:visited {
+  color: white;
 }
