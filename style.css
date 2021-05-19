@@ -229,3 +229,125 @@ footer a, footer a:visited {
 .footer-list--handshake {
   font-size: 12px;
 }
+
+.resto-pic--alafrancaise {
+  width: 100%;
+  position: relative;
+  object-fit: cover;
+}
+
+.header-menu {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.header-menu__backhome {
+  position: absolute;
+  left: 20px;
+  top: 37px;
+  font-size: 21px;
+}
+
+.header-menu__backlink:visited {
+  color: inherit;
+}
+
+.header__logo {
+  margin: auto;
+}
+
+.menu {
+  padding: 40px 20px;
+  border-radius: 55px 55px 0 0;
+  background-color: rgba(80%, 80%, 80%, 0.2);
+}
+
+.menu-resto {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+}
+
+.menu-resto__name {
+  font-family: 'Shrikhand', cursive;
+  font-size: 32px;
+  font-weight: lighter;
+}
+
+.menu-resto__heart {
+  font-size: 28px;
+  font-weight: lighter;
+  color: rgb(44.1%, 44.1%, 44.1%);
+  margin-top: 6px;
+}
+
+.menu-content__title {
+  font-size: 20px;
+  font-weight: 300;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  margin-top: 40px;
+}
+
+.menu-content__border {
+  width: 50px;
+  height: 4px;
+  background-color: #99E2D0;
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+
+.menu-content__list {
+  height: 100px;
+}
+
+.menu-content__list--content {
+  padding: 15px;
+  background-color: white;
+  border-radius: 23px;
+  box-shadow:0 5px 15px #d3d3d3;
+}
+
+.menu-content__list--content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-content__list--content hgroup {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.menu-content__list--content h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.menu-content__list--price {
+  font-weight: 500;
+}
+
+.menu-order {
+  width: 40%;
+  background: linear-gradient(#ff79da, #9356dc);
+  font-size: 16px;
+  text-decoration: none;
+  padding: 15px 20px;
+  box-shadow: 0 5px 15px 0 #aeacaf;
+  border-radius: 25px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.menu-order__btn {
+  color: white;
+}
