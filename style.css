@@ -28,7 +28,8 @@ body {
 
 .search-city__input {
   border: 0;
-  background-color: transparent
+  background-color: transparent;
+  text-align: center;
 }
 
 .search {
@@ -57,7 +58,7 @@ body {
 
 .search-resto__btn {
   width: 60%;
-  background: linear-gradient(#ff79da, #9356dc);
+  background: linear-gradient(175deg, #ff79da, #9356dc);
   color: white;
   font-size: 14px;
   text-decoration: none;
@@ -67,7 +68,7 @@ body {
 }
 
 .function {
-  margin: 30px;
+  margin: 20px;
   padding-top: 25px;
   padding-bottom: 50px;
 }
@@ -83,7 +84,6 @@ body {
 .function__btn {
   text-decoration: none;
   color: inherit;
-  padding: 15px 50px 15px -1px;
   background-color: rgba(80%, 80%, 80%, 0.2);
   border-radius: 25px;
   box-shadow:0 5px 15px #d3d3d3;
@@ -94,7 +94,8 @@ body {
 }
 
 .function__list--num {
-  padding: 5px 10px;
+  padding: 4px 8px;
+  font-size: 12px;
   border-radius: 25px;
   color: white;
   background-color: #9356DC;
@@ -102,7 +103,7 @@ body {
 
 .function i {
   color: rgb(39.4%, 39.4%, 39.4%);
-  padding: 30px;
+  padding: 30px 20px;
 }
 
 .function i:hover {
@@ -110,20 +111,20 @@ body {
 }
 
 .function__list--mobile {
-  font-size: 27px;
+  font-size: 23px;
 }
 
 .function__list--list {
-  font-size: 21px;
+  font-size: 18px;
 }
 
 .function__list--store {
-  font-size: 19px;
+  font-size: 16px;
 }
 
 .function__list--title {
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: 400;
 }
 
 .resto {
@@ -132,6 +133,12 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+
+.resto__title {
+  padding-bottom: 30px;
+  padding-left: 10px;
 }
 
 .resto-card {
@@ -163,7 +170,6 @@ body {
 .resto-card__img {
   width: 100%;
   object-fit: cover;
-  object-position: 0 -60px;
   position: relative;
   height: 190px;
   border-radius: 18px 18px 0 0;
@@ -188,17 +194,34 @@ hgroup {
   font-weight: 300
 }
 
-.resto-card__heart {
-  font-size: 25px;
-  color: rgb(44.1%, 44.1%, 44.1%);
+.resto-card__like {
   padding-right: 25px;
   margin-top: 15px;
 }
 
-/*
+.resto-card__heart {
+  font-size: 25px;
+  color: rgb(44.1%, 44.1%, 44.1%);
+  padding-right:0;
+  margin-top: 0;
+  
+}
+
+.resto-card__hoverheart {
+  color: transparent;
+  font-size: 25px;
+  padding-right: 25px;
+  margin: 0px;
+  position: absolute;
+}
+
 .resto-card__heart :hover {
-  color: linear-gradient(#ff79da, #9356dc);
-} */
+  color: transparent;
+} 
+
+.resto-card__hoverheart:hover {
+  color: #9356dc;
+}
 
 footer {
   background-color: rgb(21.8%, 21.8%, 21.8%);
@@ -230,10 +253,12 @@ footer a, footer a:visited {
   font-size: 12px;
 }
 
-.resto-pic--alafrancaise {
+.resto-pic__pic {
   width: 100%;
+  height: 240px;
   position: relative;
   object-fit: cover;
+  z-index: -1;
 }
 
 .header-menu {
@@ -259,6 +284,7 @@ footer a, footer a:visited {
 
 .menu {
   padding: 40px 20px;
+  margin-top: -45px;
   border-radius: 55px 55px 0 0;
   background-color: rgba(80%, 80%, 80%, 0.2);
 }
@@ -321,12 +347,19 @@ footer a, footer a:visited {
   justify-content: space-between;
   padding-left: 0;
   margin-top: 5px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
 }
 
+.menu-content__list--descrip {
+  width: 280px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .menu-content__list--content h3 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
 }
 
@@ -336,7 +369,7 @@ footer a, footer a:visited {
 
 .menu-order {
   width: 40%;
-  background: linear-gradient(#ff79da, #9356dc);
+  background: linear-gradient(175deg, #ff79da, #9356dc);
   font-size: 16px;
   text-decoration: none;
   padding: 15px 20px;
