@@ -48,12 +48,19 @@ body {
   padding-top: 30px;
 }
 
+.search-resto__title {
+  width: 65%;
+  margin: auto;
+}
+
 .search-resto__descrip {
   font-weight: 300;
   font-size: 16px;
+  color: rgb(21.8%, 21.8%, 21.8%);
+  width: 80%;
+  margin: auto;
   margin-bottom: 45px;
   margin-top: 20px;
-  color: rgb(21.8%, 21.8%, 21.8%);
 }
 
 .search-resto__btn {
@@ -130,11 +137,15 @@ body {
 .resto {
   padding: 50px 20px 50px 20px;
   background-color: rgba(80%, 80%, 80%, 0.2);
-  display: flex;
-  flex-wrap: wrap;
+  /*display: flex;
+  flex-wrap: wrap;*/
   justify-content: space-between;
 }
 
+.resto__resto {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .resto__title {
   padding-bottom: 30px;
@@ -398,4 +409,59 @@ footer a, footer a:visited {
 
 .menu-order__btn {
   color: white;
+}
+
+/* tablet */
+@media only screen and (min-width: 768px) and (max-width:1024px) {
+.function__title {
+  text-align: center;
+}
+
+.function i {
+  padding: 30px 50px;
+}
+
+  .function__list {
+    width: 65%;
+    margin: auto;
+  }
+
+  .function__list--title{
+    font-size: 17px;
+  }
+
+  .resto-card {
+    width: 45%;
+  }
+
+  .menu-content__list--descrip {
+    width: auto;
+  }
+}
+
+/* desktop */
+@media only screen and (min-width:1024px) {
+
+  .function__list {
+    flex-direction: row;
+    height: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+.function__list i {
+  padding: 30px 40px;
+}
+
+  .function__list--title {
+    padding-right: 60px;
+  }
+
+  .function__list--title{
+    font-size: 17px;
+  }
+
+  .resto-card {
+    width: 23%;
+  }
 }
