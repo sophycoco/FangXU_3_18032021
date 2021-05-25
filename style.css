@@ -74,6 +74,13 @@ body {
   border-radius: 25px;
 }
 
+.search-resto__btn:hover {
+  filter: brightness(1.1);
+}
+.search-resto__btn:hover {
+  box-shadow: 0 5px 15px 0 #4e4e4e;
+}
+
 .function {
   margin: 20px;
   padding-top: 25px;
@@ -213,9 +220,10 @@ hgroup {
   font-size: 25px;
   font-weight:bl;
   color: rgb(44.1%, 44.1%, 44.1%);
-  padding-right:0;
+  padding-right:15px;
   margin-top: 0;
   position: absolute;
+ 
 }
 
 .resto-card__hoverheart {
@@ -229,7 +237,7 @@ hgroup {
 }
 
 .resto-card__heart :hover {
-  color: transparent;
+  /*color: transparent; */
 } 
 
 .resto-card__hoverheart:hover {
@@ -239,6 +247,7 @@ hgroup {
   background: -webkit-linear-gradient(75deg, #ff79da, #9356dc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition: 250ms;
 }
 /*
 .fas {
@@ -310,9 +319,9 @@ footer a, footer a:visited {
 
 .menu {
   padding: 40px 20px;
-  margin-top: -45px;
+  margin-top: -50px;
   border-radius: 55px 55px 0 0;
-  background-color: rgba(80%, 80%, 80%, 0.2);
+  background-color: rgb(95.2%, 95.2%, 95.2%);
 }
 
 .menu-resto {
@@ -411,6 +420,13 @@ footer a, footer a:visited {
   color: white;
 }
 
+.menu-order:hover {
+  filter: brightness(1.1);
+}
+.menu-order:hover {
+  box-shadow: 0 5px 15px 0 #4e4e4e;
+}
+
 /* tablet */
 @media only screen and (min-width: 768px) and (max-width:1024px) {
 .function__title {
@@ -422,12 +438,16 @@ footer a, footer a:visited {
 }
 
   .function__list {
-    width: 65%;
+    width: 55%;
     margin: auto;
   }
 
   .function__list--title{
     font-size: 17px;
+  }
+
+  .resto__title {
+    text-align: center;
   }
 
   .resto-card {
@@ -440,28 +460,38 @@ footer a, footer a:visited {
 }
 
 /* desktop */
-@media only screen and (min-width:1024px) {
+@media only screen and (min-width:1025px) {
+  .function__title {
+    text-align: center;
+  }
 
   .function__list {
     flex-direction: row;
     height: auto;
-    padding-left: 40px;
-    padding-right: 40px;
+    width: 90%;
+    margin: auto;
   }
 
 .function__list i {
   padding: 30px 40px;
 }
 
-  .function__list--title {
-    padding-right: 60px;
-  }
+.function__list--title {
+  padding-right: 60px;
+}
 
-  .function__list--title{
-    font-size: 17px;
+  .resto__title {
+    padding-left: 25px;
   }
 
   .resto-card {
     width: 23%;
+  }
+
+  footer ul {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 100px;
+    padding-bottom: 40px;
   }
 }
