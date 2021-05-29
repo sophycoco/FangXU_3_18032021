@@ -233,12 +233,10 @@ hgroup {
 
 .resto-card__heart {
   font-size: 25px;
-  font-weight:bl;
   color: rgb(44.1%, 44.1%, 44.1%);
   padding-right:15px;
   margin-top: 0;
   position: absolute;
- 
 }
 
 .resto-card__hoverheart {
@@ -249,11 +247,8 @@ hgroup {
   position: relative;
   top: 1px;
   right: -1px;
+  cursor: pointer;
 }
-
-.resto-card__heart :hover {
-  /*color: transparent; */
-} 
 
 .resto-card__hoverheart:hover {
   font-size: 25px;
@@ -360,6 +355,7 @@ footer a, footer a:visited {
   position: relative;
   top: 1px;
   right: -1px;
+  cursor: pointer;
 }
 
 .menu-resto__hoverheart:hover {
@@ -368,7 +364,7 @@ footer a, footer a:visited {
   display: block;
   background: -webkit-linear-gradient(75deg, #ff79da, #9356dc);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; 
   transition: 250ms;
 }
 
@@ -725,7 +721,7 @@ footer a, footer a:visited {
   width: 100%;
   height: 100%;
   position: relative;
-  transform: scale(1) rotate(360);
+  transform: rotate(360deg);
   backface-visibility: hidden;
   transform-origin: 0 0;
 }
