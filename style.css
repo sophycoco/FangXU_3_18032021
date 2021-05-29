@@ -246,6 +246,7 @@ hgroup {
   margin: 0px;
   position: relative;
   cursor: pointer;
+  transition: 300ms ease-in-out;
 }
 
 .resto-card__hoverheart:hover {
@@ -255,7 +256,6 @@ hgroup {
   background: -webkit-linear-gradient(75deg, #ff79da, #9356dc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: 250ms;
 }
 
 footer {
@@ -351,6 +351,7 @@ footer a, footer a:visited {
   margin: 0px;
   position: relative;
   cursor: pointer;
+  transition: 300ms ease-in-out;
 }
 
 
@@ -365,7 +366,6 @@ footer a, footer a:visited {
   background: -webkit-linear-gradient(75deg, #ff79da, #9356dc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
-  transition: 250ms;
 }
 
 .menu-content__title {
