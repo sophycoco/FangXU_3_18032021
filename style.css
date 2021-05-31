@@ -240,20 +240,21 @@ hgroup {
 }
 
 .resto-card__hoverheart {
-  color: transparent;
+  color: #9356dc;
+  opacity: 0;
   font-size: 25px;
   padding-right: 25px;
   margin: 0px;
   position: relative;
   cursor: pointer;
-  transition: 300ms ease-in-out;
+  transition: 300ms cubic-bezier(.44,.04,.72,.85);
 }
 
 .resto-card__hoverheart:hover {
   font-size: 25px;
-  color: #ff79da;
   display: block;
-  background: -webkit-linear-gradient(75deg, #ff79da, #9356dc);
+  opacity: 1;
+  background: linear-gradient(375deg, #ff79da, #9356dc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -271,6 +272,7 @@ footer li {
   font-weight: 400;
   margin: 10px;
   margin-left: 0;
+  cursor: pointer;
 }
 
 .footer__title {
@@ -346,12 +348,14 @@ footer a, footer a:visited {
 }
 
 .menu-resto__hoverheart {
-  color: transparent;
+  color: #9356dc;
+  opacity: 0;
   font-size: 25px;
+  padding-right: 25px;
   margin: 0px;
   position: relative;
   cursor: pointer;
-  transition: 300ms ease-in-out;
+  transition: 300ms cubic-bezier(.44,.04,.72,.85);
 }
 
 
@@ -361,11 +365,11 @@ footer a, footer a:visited {
 
 .menu-resto__hoverheart:hover {
   font-size: 25px;
-  color: #ff79da;
   display: block;
-  background: -webkit-linear-gradient(75deg, #ff79da, #9356dc);
+  opacity: 1;
+  background: linear-gradient(375deg, #ff79da, #9356dc);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
+  -webkit-text-fill-color: transparent;
 }
 
 .menu-content__title {
@@ -400,6 +404,16 @@ footer a, footer a:visited {
   overflow: hidden;
   animation: fadein 1800ms both;
   cursor: pointer;
+}
+
+.menu-content__list:nth-child(5) {
+  animation-delay: 400ms;
+}
+.menu-content__list:nth-child(4) {
+  animation-delay: 150ms;
+}
+.menu-content__list:nth-child(3) {
+  animation-delay: 100ms;
 }
 
 @keyframes fadein {
@@ -665,6 +679,8 @@ footer a, footer a:visited {
   position: relative;
   animation-name: animatepage;
   animation-duration: 2.5s;
+  animation-delay: 0.7s;
+  animation-fill-mode:  backwards;
 }
 
 @keyframes animatepage {
@@ -683,10 +699,10 @@ footer a, footer a:visited {
     transform: rotate(0deg);
   }
   100% {
-    top: 56px;
-    left: 56px;
-    width: 167px;
-    height: 167px;
+    top: 60px;
+    left: 60px;
+    width: 165px;
+    height: 165px;
     opacity: 0;
     transform: rotate(360deg);
   }
@@ -697,6 +713,7 @@ footer a, footer a:visited {
   opacity: 1;
   border-radius: 50%;
   animation: loading-spinner 1.5s linear 2 forwards;
+  box-sizing: content-box;
 }
 .loading-spinner div:nth-child(1) {
   border-color: #9356dc;
@@ -725,4 +742,3 @@ footer a, footer a:visited {
   backface-visibility: hidden;
   transform-origin: 0 0;
 }
-.loading-spinner div { box-sizing: content-box; }
