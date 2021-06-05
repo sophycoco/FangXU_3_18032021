@@ -12,7 +12,8 @@ a:visited {
 
 body {
     font-family: 'Roboto', sans-serif;
-    margin: 0;
+    max-width: 1600px;
+    margin: 0 auto;
   }
 
 .header {
@@ -308,10 +309,10 @@ footer a, footer a:visited {
 }
 
 .header-menu__backhome {
-  position: absolute;
-  left: 20px;
-  top: 50px;
+  position: relative;
   font-size: 21px;
+  padding: 20px 0 0 20px;
+  margin-right: -40px;
 }
 
 .header-menu__backlink:visited {
@@ -472,6 +473,7 @@ footer a, footer a:visited {
   padding-top: 30px;
   margin-right: 5px;
   font-size: 16px;
+  transform-origin: right;
 }
 
 .menu-content__checkcircle {
@@ -483,11 +485,12 @@ footer a, footer a:visited {
   justify-content: center;
   transform-origin: right;
   overflow: hidden;
+  transition: all 600ms ease;
 }
 
 .menu-content__list:hover .menu-content__checkcircle {
   width: 55px;
-  animation: widthGrow 400ms ease-out;
+  animation: widthGrow 400ms ease-in-out;
 }
 
 @keyframes widthGrow {
